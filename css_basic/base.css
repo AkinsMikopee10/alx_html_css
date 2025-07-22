@@ -161,18 +161,22 @@ footer {
 
 p {
 	margin-bottom: 15px;
+    color: white;
 }
 h1 {
 	font-size: 36px;
 	margin: 40px 0 20px;
+    color: #0FFCBE;
 }
 h2 {
 	font-size: 32px;
 	margin: 30px 0 15px;
+    color: #0FFCBE;
 }
 h3 {
 	font-size: 28px;
 	margin: 25px 0 10px;
+    color: #0FFCBE;
 }
 h4 {
 	font-size: 20px;
