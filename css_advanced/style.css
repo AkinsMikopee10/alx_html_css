@@ -255,7 +255,9 @@ section > div:last-child {
     display: flex; /* Use flex for internal layout of video card */
     flex-direction: column;
     justify-content: space-between; /* Push rating/duration to bottom */
+    position: relative;
 }
+
 
 .video img { /* Video thumbnail */
     width: 100%;
@@ -263,6 +265,50 @@ section > div:last-child {
     object-fit: cover;
     border-radius: 4px;
     margin-bottom: 16px;
+}
+
+#play_button_1 {
+    position: absolute; /* Position the play button absolutely */
+    top: 25%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    width: 60px; /* Size of the play button */
+    height: 60px;
+    z-index: 50; /* Ensure it's on top of the video image */
+    cursor: pointer;
+}
+
+#play_button_2 {
+    position: absolute; /* Position the play button absolutely */
+    top: 25%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    width: 60px; /* Size of the play button */
+    height: 60px;
+    z-index: 50; /* Ensure it's on top of the video image */
+    cursor: pointer;
+}
+
+#play_button_3 {
+    position: absolute; /* Position the play button absolutely */
+    top: 25%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    width: 60px; /* Size of the play button */
+    height: 60px;
+    z-index: 50; /* Ensure it's on top of the video image */
+    cursor: pointer;
+}
+
+#play_button_4 {
+    position: absolute; /* Position the play button absolutely */
+    top: 25%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    width: 60px; /* Size of the play button */
+    height: 60px;
+    z-index: 50; /* Ensure it's on top of the video image */
+    cursor: pointer;
 }
 
 .video h3 {
@@ -333,7 +379,6 @@ section > div:last-child {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 64px; /* Space from the previous section */
     text-align: center; /* Center the heading and button */
 }
 
@@ -403,4 +448,86 @@ section > div:last-child {
     background-color: white;
     color: #C271FF;
     transform: scale(1.05);
+}
+
+#faq_section {
+    display: flex;
+    flex-direction: column; /* Default to column for small screens */
+    align-items: center;
+    padding: 64px 16px;
+    background-color: #f3f4f6; /* Light background for this section */
+    color: #000000;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Center the heading */
+}
+
+#faq_section h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+#faq_container { /* Container for the two columns of FAQ items */
+    display: flex;
+    flex-direction: row; /* Default to column for small screens */
+    gap: 25px; /* Space between columns/items */
+    width: 100%;
+}
+
+#faq_header {
+    margin-bottom: 16px; /* Space below header */
+}
+
+#faq_header h3 {
+    font-size: 22px;
+    text-align: left;
+    padding-left: 100px;
+    font-weight: 700;
+    margin: 0; /* Remove default margin */
+}
+
+#faq_para {
+    font-size: 16px;
+    text-align: justify;
+    text-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 32px; /* Space below paragraph */
+}
+
+
+#all_footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #071629;
+    width: 100%; /* Take full width of parent */
+    justify-content: center; /* Center items on small screens */
+    align-items: center;
+}
+
+#footer_images {
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Take full width of parent */
+    justify-content: center; /* Center items on small screens */
+    align-items: center;
+    gap: 500px;
+    padding-top: 50px;
+    margin-bottom: 16px; /* Space below images before paragraph on small screens */
+}
+#footer_para {
+    width: 100%; /* Ensure it takes full width to center its text */
+    text-align: center; /* Center the paragraph text */
+    margin-top: 0; /* Reset default margin */
+}
+
+#footer_para p {
+    font-size: 14px;
+    color: white;
+    opacity: 0.5;
+    margin: 0; /* Remove default paragraph margin */
 }
