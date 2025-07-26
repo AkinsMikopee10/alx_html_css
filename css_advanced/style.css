@@ -1,0 +1,171 @@
+body {
+    background-color: grey;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#first_background{
+    background-image: url('images/Object.png');
+    background-size: contain;
+    background-position: top;
+    background-color: #333333;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    color: white;   
+}
+
+header {
+    padding: 16px 0;
+}
+
+#nav {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0, 50px, 50px, 50px;
+    
+}
+
+#link_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+#link_list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 13px;
+    transition: color 0.3s ease;
+}
+
+#link_list li a:hover {
+    color: aqua;
+}
+
+main {
+    width: 100%;
+    text-align: center;
+}
+
+section {
+    padding-top: 1px;
+    padding-bottom:1px;
+}
+
+section > div:first-child {
+    margin-bottom: 40px;
+}
+
+#main_header {
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1px;
+}
+
+#spans {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#spans .span  {
+    margin-left: 18px;
+    margin-right: 18px
+}
+
+#register_button_1 {
+    margin-top: 15px;
+}
+
+#register_button_1 button {
+    background-color: #C271FF;
+    color: white;
+    font-weight: 700;
+    padding: 10px 25px;
+    border-radius: 9999px;
+    font-size: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+    border: none;
+    cursor: pointer;
+}
+
+#register_button_1 button:hover {
+    color: indigo;
+    transform: scale(1.05);
+}
+
+section > div:last-child {
+    margin-top: 60px;
+}
+
+#pro_header {
+    font-size: 30px;
+}
+
+#pro_header b {
+    color: #C271FF;
+}
+
+.pros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.pros > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: -95px;
+    max-width: 180px;
+    max-width: 250px;
+    flex-grow: 1;
+}
+
+.pros img {
+    width: 144px;
+    height: 144px;
+    border-radius: 9999px;
+    object-fit: cover;
+    margin-bottom: 1px;
+}
+
+.pros h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.pros p {
+    font-size: 14px;
+    opacity: 0.9;
+    line-height: 1.5;
+    font-style: italic;
+}
