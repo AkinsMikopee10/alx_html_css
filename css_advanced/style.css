@@ -216,3 +216,110 @@ section > div:last-child {
     text-align: left;
 }
 
+
+#video_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 16px;
+    background-color: #f3f4f6;
+    max-width: 1280px;
+}
+
+#video_section h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+#video_section h2 b {
+    color: #C271FF;
+}
+
+#video_section > div { /* Container for all video cards */
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center video cards */
+    gap: 32px; /* Space between video cards */
+    width: 100%; /* Ensure it takes full width of its parent */
+}
+
+.video {
+    background-color: #ffffff;
+    padding: 16px;
+    text-align: left;
+    min-width: 160px; /* Minimum width for video card */
+    max-width: 250px; /* Maximum width for video card */
+    flex-basis: calc(25% - 24px); /* Approximately 4 items per row, accounting for gap */
+    flex-grow: 1; /* Allow cards to grow */
+    display: flex; /* Use flex for internal layout of video card */
+    flex-direction: column;
+    justify-content: space-between; /* Push rating/duration to bottom */
+}
+
+.video img { /* Video thumbnail */
+    width: 100%;
+    height: 180px; /* Fixed height for consistency */
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.video h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.video p {
+    font-size: 15px;
+    line-height: 1.5;
+    opacity: 0.9;
+    margin-bottom: 16px; /* Space before speaker info */
+}
+
+.speaker {
+    display: flex;
+    align-items: center;
+    margin-top: auto; /* Push speaker and rating to bottom */
+    margin-bottom: 8px;
+}
+
+.speaker img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8px;
+    border: 2px solid #2563eb; /* A small border to match theme */
+}
+
+.speaker h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    color: #C271FF;
+}
+
+.rating_para {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.rating_para div img { /* Star rating image */
+    height: 20px; /* Adjust size of star rating image */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 4px; /* Space between stars and time */
+}
+
+.rating_para p { /* Duration text */
+    font-size: 14px;
+    opacity: 0.8;
+    margin: 0;
+    color: #C271FF;
+}
