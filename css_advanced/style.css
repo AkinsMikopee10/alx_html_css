@@ -169,3 +169,50 @@ section > div:last-child {
     line-height: 1.5;
     font-style: italic;
 }
+
+#author_quotes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 16px;
+    background-color: #C271FF;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#author_image img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#quotes {
+    margin-top: -50px;
+}
+
+#quotes blockquote {
+    font-size: 16px; /* Larger font for quote */
+    font-style: italic; /* Italicized as requested */
+    line-height: 1.6;
+    padding: 0;
+}
+
+#quotes h3 {
+    font-size: 20px; /* Author's name font size */
+    font-weight: 700;
+    margin-bottom: 4px;
+    margin-left: 37px;
+    text-align: left;
+}
+
+#quotes p {
+    font-size: 16px; /* Weather presenter text size */
+    opacity: 0.8;
+    margin: 0;
+    margin-left: 37px;
+    text-align: left;
+}
+
